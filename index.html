@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelmaaTech Internship Certification Program</title>
+    <link rel="icon" type="image/png" href="https://www.melmaa.tech/img/logo.png" sizes="96x96">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .streams {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .stream-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .stream-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .stream-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .stream-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .stream-card h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .contact-section, .terms {
+            background: linear-gradient(135deg, #2196f3, #1976d2);
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .terms {
+            background: #f8f9fa;
+            color: #333;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .show-more-btn {
+            display: block;
+            background: linear-gradient(135deg, #1976d2, #1565c0);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 25px auto;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .show-more-btn:hover {
+            background: linear-gradient(135deg, #1565c0, #1976d2);
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            color: white;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 15px;
+        }
+
+        .social-icons img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem;
+            }
+            .logo {
+                max-width: 140px;
+            }
+            .streams {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+            .stream-card {
+                padding: 20px;
+            }
+            .stream-card img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            .streams {
+                grid-template-columns: 1fr;
+            }
+            .contact-section, .terms {
+                padding: 25px;
+            }
+            .social-icons {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.melmaa.tech/img/logo.png" alt="MelmaaTech Logo" class="logo">
+        <h1>MelmaaTech Internship Certification Program - 2025</h1>
+        <p> Boost Your Career with Certification Programs! 
+
+            We’re excited to offer industry-focused certification courses designed to equip you with the skills you need for your dream job!
+            
+            </p>
+    </header>
+
+    <div class="container">
+        <section class="streams">
+            <div class="stream-card">
+                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/94/external-artificial-intelligence-robotics-flaticons-lineal-color-flat-icons.png" alt="AI Logo">
+                <h3>Artificial Intelligence</h3>
+                <p>Learn machine learning, deep learning, neural networks, computer vision, and natural language processing. Build AI models and applications.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://img.icons8.com/3d-fluency/94/java-coffee-cup-logo.png" alt="Java Logo">
+                <h3>JAVA Full Stack</h3>
+                <p>Master Java programming, Spring Boot, Hibernate, REST APIs, and web development. Build end-to-end enterprise applications.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://img.icons8.com/3d-fluency/94/python.png" alt="Python Logo">
+                <h3>Python Full Stack</h3>
+                <p>Learn Python, Django, Flask, databases, and web development. Create dynamic websites and web applications.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/6911/6911903.png" alt="VLSI Logo">
+                <h3>VLSI</h3>
+                <p>Study integrated circuit design, digital electronics, ASIC design, and verification. Work with industry-standard EDA tools.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/8637/8637099.png" alt="Embedded System & IoT Logo">
+                <h3>Embedded System & IoT</h3>
+                <p>Explore microcontrollers, sensors, IoT protocols, and embedded programming. Build smart connected devices.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2716/2716652.png" alt="Cyber Security Logo">
+                <h3>Cyber Security</h3>
+                <p>Learn network security, ethical hacking, cryptography, and security tools. Protect systems from cyber threats.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/12222/12222588.png" alt="Chat GPT & Gen AI Logo">
+                <h3>Chat GPT & Gen AI</h3>
+                <p>Master generative AI, large language models, prompt engineering, and AI applications. Create AI-powered solutions.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4882/4882396.png" alt="Business Analytics Logo">
+                <h3>Business Analytics</h3>
+                <p>Learn data analysis, business intelligence, statistical modeling and visualization tools to drive business decisions.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://img.icons8.com/color/96/amazon-web-services.png" alt="AWS and DevOps Logo">
+                <h3>AWS and DevOps</h3>
+                <p>Learn cloud computing, continuous integration/deployment, containerization and infrastructure automation.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2821/2821637.png" alt="Data Science Logo">
+                <h3>Data Science</h3>
+                <p>Master data analysis, statistical modeling, machine learning and data visualization using industry-standard tools.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2748/2748383.png" alt="DotNet Logo">
+                <h3>DotNet</h3>
+                <p>Learn C#, ASP.NET, MVC, Web APIs and database integration to build enterprise-grade applications.</p>
+            </div>
+            <div class="stream-card">
+                <img src="https://img.icons8.com/3d-fluency/94/design.png" alt="UI/UX Design Logo">
+                <h3>UI/UX Design</h3>
+                <p>Master user interface design, user experience principles, wireframing, prototyping and design tools.</p>
+            </div>
+        </section>
+        <section class="program-details" style="
+            background: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 900px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        ">
+            <div class="program-header" style="
+                text-align: center;
+                margin-bottom: 30px;
+            ">
+                <h2 style="
+                    color: #1565c0;
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                ">Short-Term Internship 3 Weeks</h2>
+                <p style="
+                    color: #666;
+                    font-size: 1.1rem;
+                    margin-bottom: 20px;
+                ">Gain hands-on experience with our Comprehensive Live Training Program led by Industry Experts!</p>
+            </div>
+
+            <div class="program-features" style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+                margin-bottom: 30px;
+            ">
+                <div class="feature-card" style="
+                    background: white;
+                    padding: 25px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                    flex: 1;
+                    min-width: 250px;
+                ">
+                    <h3 style="color: #1976d2; margin-bottom: 20px;">✅ Program Highlights</h3>
+                    <ul style="
+                        list-style: none;
+                        padding: 0;
+                        text-align: left;
+                    ">
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Duration: 3 Weeks</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Live Training: 30 Hours</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Interactive sessions with real-time industry experts</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Practical learning through hands-on projects</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Ideal for students & professionals looking to upskill</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card" style="
+                    background: white;
+                    padding: 25px;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                    flex: 1;
+                    min-width: 250px;
+                ">
+                    <h3 style="color: #1976d2; margin-bottom: 20px;">✅ Certificate Benefits</h3>
+                    <ul style="
+                        list-style: none;
+                        padding: 0;
+                        text-align: left;
+                    ">
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Resume Weightage – Stand out in job applications</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ LinkedIn Showoff – Showcase your skills to recruiters</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Industry-recognized certification</li>
+                        <li style="margin-bottom: 10px; color: #666;">✔️ Boost your professional credibility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="program-cta" style="
+                text-align: center;
+                margin-top: 30px;
+            ">
+                <div class="action-text" style="
+                    background: #e3f2fd;
+                    color: #1565c0;
+                    padding: 12px 25px;
+                    border-radius: 8px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                ">
+                    🚀 Enroll Now & Advance Your Career!
+                </div>
+                <div class="seats-alert" style="
+                    background: #fff3e0;
+                    color: #e65100;
+                    padding: 12px 25px;
+                    border-radius: 8px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                ">
+                    🔥 Hurry Up, Limited Seats Available!
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="interested-section" style="text-align: center; margin: 40px 0;">
+            <a href="Registration.html" class="interested-btn" style="
+                display: inline-block;
+                background: linear-gradient(135deg, #1e88e5, #1565c0);
+                color: white;
+                padding: 15px 40px;
+                text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: 600;
+                border-radius: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+                box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+                transform: perspective(1000px) translateZ(0);
+            ">
+                I'm Interested
+            </a>
+        </section>
+
+        <section class="contact-section" style="
+            background: #f5f5f5;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px auto;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        ">
+            <h2 style="
+                color: #1565c0;
+                font-size: 2rem;
+                margin-bottom: 20px;
+                font-weight: 600;
+            ">Contact Us</h2>
+            <div style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                background: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            ">
+                <img src="https://img.icons8.com/3d-fluency/94/mail.png" alt="Email" style="width: 32px; height: 32px;">
+                <a href="mailto:support@melmaa.com" style="
+                    color: #333;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+                ">support@melmaa.com</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <h3>Follow Us:</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ShiftEduTech" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/3d-fluency/94/instagram-new.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/ShiftEduTech" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/3d-fluency/94/facebook-circled.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/ShiftEduTech" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/3d-fluency/94/youtube-play.png" alt="YouTube"></a>
+            <a href="https://www.linkedin.com/company/ShiftEduTech" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
